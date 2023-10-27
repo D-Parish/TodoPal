@@ -10,8 +10,9 @@ import SwiftUI
 struct CategoryCell: View {
     @State var categoryTitle : String
     @State var categoryQuantity : String
+//    @State var categoryImage : Image
     var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
+        VStack(alignment: .leading, spacing: 0) {
             
             ZStack {
                 
@@ -37,7 +38,7 @@ struct CategoryCell: View {
             .padding(.horizontal)
         }
         
-        .frame(width:225, height: 112, alignment: .leading )
+        .frame(width: UIScreen.main.bounds.width * 0.45, height: UIScreen.main.bounds.height * 0.12, alignment: .leading )
         .background(Color.yellow)
         .cornerRadius(20)
     }
